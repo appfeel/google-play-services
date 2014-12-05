@@ -4,9 +4,7 @@
   Use of this source code is governed by a MIT license that can be
   found in the LICENSE file.
 -->
-<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-    id="com.google.google-play-services"
-    version="20.0.0">
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" id="com.google.playservices" version="20.0.0">
   <engines>
     <engine name="cordova" version=">=3.0.0" />
   </engines>
@@ -15,7 +13,7 @@
 
   <platform name="android">
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+      <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     </config-file>
 
     <source-file src="version.xml" target-dir="res/values" />
